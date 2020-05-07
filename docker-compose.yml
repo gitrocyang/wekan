@@ -105,6 +105,8 @@ services:
       - wekan-tier
     expose:
       - 27017
+    prots:
+      - 57017
     volumes:
       - wekan-db:/data/mongodb
       - wekan-db-dump:/dump/mongodb
@@ -170,7 +172,7 @@ services:
       # NOTE: Special characters need to be url-encoded in MAIL_URL.
       #       You can encode those characters for example at: https://www.urlencoder.org
       #- MAIL_URL=smtp://user:pass@mailserver.example.com:25/
-      - MAIL_URL=smtps://yangp%40cxinternet.cn:woaidonghang78()@smtp.exmail.qq.com:465/?ignoreTLS=true&tls={rejectUnauthorized:false}
+      - MAIL_URL=smtps://yangp%40cxinternet.cn:woaiDongHang7890@smtp.exmail.qq.com:465/?ignoreTLS=true&tls={rejectUnauthorized:false}
       - MAIL_FROM=Wekan 通知 <yangp@cxinternet.cn>
       #---------------------------------------------------------------
       # ==== OPTIONAL: MONGO OPLOG SETTINGS =====
